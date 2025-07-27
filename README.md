@@ -93,10 +93,31 @@ LoginLoggerMod/
 │   └── LoginLogMod.java              # Main mod class
 ├── src/main/resources/
 │   └── fabric.mod.json               # Mod metadata
+├── src/test/java/com/shadowbq/loginlog/
+│   └── LoginLogModTest.java          # Basic unit tests
 ├── build.gradle                      # Build configuration
 ├── settings.gradle                   # Gradle settings
 ├── README.md                         # This file
 └── LICENSE                           # MIT License
+```
+
+## Other Useful Build Commands
+
+```bash
+# Just compile the code (faster)
+./gradlew compileJava
+
+# Run tests
+./gradlew test
+
+# Build without running tests
+./gradlew build -x test
+
+# Clean and rebuild everything
+./gradlew clean build
+
+# Show build tasks available
+./gradlew tasks
 ```
 
 ## Technical Details
@@ -107,14 +128,6 @@ LoginLoggerMod/
 - **Dependencies**: Fabric API for server connection events
 
 The mod uses Fabric's `ServerPlayConnectionEvents` to detect player connections and disconnections, and checks for the existence of player data files to determine first-time joins.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
