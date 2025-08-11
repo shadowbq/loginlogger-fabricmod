@@ -17,6 +17,11 @@ A Minecraft Fabric mod that logs player login and logout events to a file, with 
 - **Fabric API**: 0.129.0+1.21.7 or compatible version
 - **Java**: 21 or higher
 
+### For Development
+
+- **Gradle**: 8.14.3 (via wrapper - automatically downloaded)
+- **Git**: For cloning the repository
+
 ## Installation
 
 1. Download the mod JAR file from the [Releases](../../releases) page
@@ -55,11 +60,6 @@ The mod creates log entries in the following format:
 Logs are saved to: `logs/login_usernames.log` (relative to server root directory)
 
 ## Building from Source
-
-### Prerequisites
-
-- Java 21 or higher
-- Git
 
 ### Build Steps
 
@@ -126,6 +126,12 @@ LoginLoggerMod/
 - **Main Class**: `com.shadowbq.loginlog.LoginLogMod`
 - **Environment**: Server-side only
 - **Dependencies**: Fabric API for server connection events
+
+### Build Information
+
+- **Gradle**: 8.14.3 (via wrapper)
+- **Fabric Loom**: 1.10.1 (build plugin)
+- **JUnit**: 5.10.1 (testing framework)
 
 The mod uses Fabric's `ServerPlayConnectionEvents` to detect player connections and disconnections, and checks for the existence of player data files to determine first-time joins.
 
