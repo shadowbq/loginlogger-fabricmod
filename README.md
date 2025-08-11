@@ -1,7 +1,7 @@
 # Login Logger Mod
 
 [![Mod Version](https://img.shields.io/badge/Mod%20Version-1.0.0-blue)](https://github.com/shadowbq/loginlogger-fabricmod/releases)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.7-green)](https://minecraft.net)
+[![Minecraft](https://img.shields.io/badge/Minecraft-~1.21.7-green)](https://minecraft.net)
 [![Fabric Loader](https://img.shields.io/badge/Fabric%20Loader-0.16.14+-orange)](https://fabricmc.net)
 [![Fabric API](https://img.shields.io/badge/Fabric%20API-0.129.0+-yellow)](https://modrinth.com/mod/fabric-api)
 [![Java](https://img.shields.io/badge/Java-21+-red)](https://adoptium.net)
@@ -20,7 +20,7 @@ A Minecraft Fabric mod that logs player login and logout events to a file, with 
 
 ## Requirements
 
-- **Minecraft**: 1.21.7
+- **Minecraft**: ~1.21.7 (1.21.x compatible)
 - **Fabric Loader**: 0.16.14 or higher
 - **Fabric API**: 0.129.0+1.21.7 or compatible version
 - **Java**: 21 or higher
