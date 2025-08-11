@@ -1,5 +1,13 @@
 # Login Logger Mod
 
+[![Mod Version](https://img.shields.io/badge/Mod%20Version-1.0.0-blue)](https://github.com/shadowbq/loginlogger-fabricmod/releases)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.7-green)](https://minecraft.net)
+[![Fabric Loader](https://img.shields.io/badge/Fabric%20Loader-0.16.14+-orange)](https://fabricmc.net)
+[![Fabric API](https://img.shields.io/badge/Fabric%20API-0.129.0+-yellow)](https://modrinth.com/mod/fabric-api)
+[![Java](https://img.shields.io/badge/Java-21+-red)](https://adoptium.net)
+[![License](https://img.shields.io/badge/License-MIT-brightgreen)](https://github.com/shadowbq/loginlogger-fabricmod/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/badge/Build-Passing-success)](https://github.com/shadowbq/loginlogger-fabricmod)
+
 A Minecraft Fabric mod that logs player login and logout events to a file, with special detection for first-time players.
 
 ## Features
@@ -77,6 +85,31 @@ Logs are saved to: `logs/login_usernames.log` (relative to server root directory
    ```
 
 3. The built JAR file will be located in `build/libs/`
+
+### Understanding the Mod JAR
+
+Your built JAR file (`loginlog-1.0.0.jar`) is a complete Minecraft Fabric mod. Here's what makes it work:
+
+**JAR Contents:**
+
+```text
+META-INF/MANIFEST.MF
+META-INF/
+com/shadowbq/loginlog/LoginLogMod.class    # Compiled mod code
+fabric.mod.json                            # Mod metadata (makes it a mod!)
+```
+
+**What makes it a mod:**
+
+- `fabric.mod.json` - Tells Fabric Loader this is a mod and how to load it
+- Compiled Java classes - Your mod's functionality
+- Built with Fabric Loom - Properly configured for Minecraft
+
+**Installation:**
+
+1. Copy `build/libs/loginlog-1.0.0.jar` to your server's `mods/` folder
+2. No renaming required - any `.jar` filename works
+3. Fabric Loader automatically detects and loads it on server start
 
 ### Development Setup
 
