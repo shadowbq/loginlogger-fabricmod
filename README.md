@@ -130,7 +130,7 @@ LoginLoggerMod/
 ### Build Information
 
 - **Gradle**: 8.14.3 (via wrapper)
-- **Fabric Loom**: 1.10.1 (build plugin)
+- **Fabric Loom**: 1.10.4 (build plugin)
 - **JUnit**: 5.10.1 (testing framework)
 
 The mod uses Fabric's `ServerPlayConnectionEvents` to detect player connections and disconnections, and checks for the existence of player data files to determine first-time joins.
