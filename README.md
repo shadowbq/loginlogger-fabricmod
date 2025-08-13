@@ -10,6 +10,8 @@
 
 A Minecraft Fabric mod that logs player login and logout events to a file, with special detection for first-time players.
 
+<img width="604" height="266" alt="login_usernames" src="https://github.com/user-attachments/assets/6d8e151b-9025-4b59-ac85-c93bef4c32c2" />
+
 ## Features
 
 - **Player Join Logging**: Records when players join the server
